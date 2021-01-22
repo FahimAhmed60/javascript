@@ -8,7 +8,7 @@ function kilometerToMeter(distanceInKilometer){
         console.log("Sorry invalid input!");
     }
 }
-var kiloMeter = kilometerToMeter (5);
+var kiloMeter = kilometerToMeter (3);
 console.log(kiloMeter);
 //end of first
 //Budget Calculator 
@@ -19,7 +19,7 @@ function budgetCalculator(pieceOfWatch,pieceOfMobile,pieceOfLaptop){
     var totalNeed = pieceOfWatch*priceOfWatch + pieceOfMobile*priceOfMobile + pieceOfLaptop*priceOfLaptop;
     return totalNeed;
 }
-var budgetAmount = budgetCalculator (2,3,4);
+var budgetAmount = budgetCalculator (1,5,3);
 console.log(budgetAmount);
 //end of second
 // hotelCost
@@ -40,7 +40,7 @@ function hotelCost(perDay){
         }
         return totalCost;
 }
-var totalCost = hotelCost(30);
+var totalCost = hotelCost(20);
 console.log(totalCost);
 // end of third
 // megaFriend
