@@ -13,6 +13,9 @@ console.log(kiloMeter);
 //end of first
 //Budget Calculator 
 function budgetCalculator(pieceOfWatch,pieceOfMobile,pieceOfLaptop){
+    if (pieceOfWatch<0 || priceOfMobile<0 || pieceOfLaptop<0){
+        console.log("Invalid Input! Try again!")
+    }
     var priceOfWatch = 50;
     var priceOfMobile = 100;
     var priceOfLaptop = 500;
@@ -24,6 +27,7 @@ console.log(budgetAmount);
 //end of second
 // hotelCost
 function hotelCost(perDay){
+    if(perDay>0){
     first10DaysCost = 100;
     second10DaysCost = 80;
     restOfDayCostings = 50;
@@ -39,7 +43,12 @@ function hotelCost(perDay){
             var totalCost = 10*first10DaysCost+10*second10DaysCost + daysExtra20*restOfDayCostings;
         }
         return totalCost;
-}
+    }
+    else 
+    {
+        console.log("Days can't be negative. Try to put valid input!");
+    }
+} 
 var totalCost = hotelCost(20);
 console.log(totalCost);
 // end of third
