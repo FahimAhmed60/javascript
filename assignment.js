@@ -10,8 +10,8 @@ function kilometerToMeter(distanceInKilometer){
 }
 var kiloMeter = kilometerToMeter (5);
 console.log(kiloMeter);
+//end of first
 //Budget Calculator 
-
 function budgetCalculator(pieceOfWatch,pieceOfMobile,pieceOfLaptop){
     var priceOfWatch = 50;
     var priceOfMobile = 100;
@@ -21,7 +21,7 @@ function budgetCalculator(pieceOfWatch,pieceOfMobile,pieceOfLaptop){
 }
 var budgetAmount = budgetCalculator (2,3,4);
 console.log(budgetAmount);
-
+//end of second
 // hotelCost
 function hotelCost(perDay){
     first10DaysCost = 100;
@@ -29,6 +29,10 @@ function hotelCost(perDay){
     restOfDayCostings = 50;
         if  (perDay>0 && perDay<=10){
             var totalCost = perDay*first10DaysCost;
+        }
+        else if(perDay>10 && perDay<=20){
+            var daysExtra10 = perDay - 10;
+            var totalCost = 10*first10DaysCost + daysExtra10*second10DaysCost;
         }
         else if(perDay>20){
             var daysExtra20 = perDay-20;
@@ -38,15 +42,17 @@ function hotelCost(perDay){
 }
 var totalCost = hotelCost(30);
 console.log(totalCost);
+// end of third
 // megaFriend
 function megaFriend(arr) {
     var longest = arr[0];
-    for (var i = 1; i < arr.length; i++) {
+    for (var i = 0; i < arr.length; i++) {
         if (arr[i].length > longest.length) {
             longest = arr[i];
         }
     }
     return longest;
 }
-var arr = ["Fahim Ahmed", "Ornob", "Shihab Khan", "Mubin"];
+var arr = ["Fahim Ahmed", "Ornob", "Shihab Khan", "Mubin", "Khalek"];
 console.log(megaFriend(arr));
+//end of last
